@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DB7AF252-4B3E-46E8-8BEA-928E2E242BA8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>JaraffeEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ThirdParty\glm;..\ThirdParty\glfw-3.2.1.bin.WIN64\include;..\ThirdParty\VulkanSDK\Include;..\ThirdParty\stb;..\ThirdParty\tinyobjloader;..\ThirdParty\TBB\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\ThirdParty\glfw-3.2.1.bin.WIN64\lib-vc2015;..\ThirdParty\VulkanSDK\Lib;..\ThirdParty\TBB\lib\intel64\vc14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ThirdParty\glm;..\ThirdParty\glfw-3.2.1.bin.WIN64\include;..\ThirdParty\VulkanSDK\Include;..\ThirdParty\stb;..\ThirdParty\tinyobjloader;..\ThirdParty\TBB\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\ThirdParty\glfw-3.2.1.bin.WIN64\lib-vc2015;..\ThirdParty\VulkanSDK\Lib;..\ThirdParty\TBB\lib\intel64\vc14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\CoreGlobal.cpp" />
+    <ClCompile Include="Core\HAL\AppWindow\OS\GLFWWindow.cpp" />
+    <ClCompile Include="Core\HAL\AppWindow\GenericWindow.cpp" />
+    <ClCompile Include="Core\HAL\File\GenericFile.cpp" />
+    <ClCompile Include="Core\RHI\DynamicRHI.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Core\HAL\Memory\Memory.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\HAL\Memory\Allocator\TBB\TBBAllocator.cpp" />
+    <ClCompile Include="Core\HAL\Memory\Allocator\System\SystemAllocator.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanDevice.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanPhysicalDevice.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanInstance.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanExtensionsInfo.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanSurface.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanSwapchain.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanShaderModule.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanPipeline.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanFrameBuffer.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanCommandPool.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanCommandBuffer.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanSemaphore.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanDynamicRHI.cpp" />
+    <ClCompile Include="Core\RHI\VertexLayout.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Color.frag" />
+    <None Include="Shaders\Color.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\GlobalMacro.h" />
+    <ClInclude Include="Config\EngineConfig.h" />
+    <ClInclude Include="Core\CoreGlobal.h" />
+    <ClInclude Include="Core\HAL\Memory\Memory.h" />
+    <ClInclude Include="Core\HAL\AppWindow\OS\GLFWWindow.h" />
+    <ClInclude Include="Core\HAL\AppWindow\GenericWindow.h" />
+    <ClInclude Include="Core\HAL\File\GenericFile.h" />
+    <ClInclude Include="Core\RHI\DynamicRHI.h" />
+    <ClInclude Include="Core\RHI\RHIDefinitions.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanConfiguration.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanConverter.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Core\HAL\Memory\Allocator\TBB\TBBAllocator.h" />
+    <ClInclude Include="Core\HAL\Memory\Allocator\System\SystemAllocator.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanDevice.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanPhysicalDevice.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanInstance.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanExtensionsInfo.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanSurface.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanSwapchain.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanShaderModule.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanPipeline.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanFrameBuffer.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanCommandPool.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanCommandBuffer.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanSemaphore.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanDynamicRHI.h" />
+    <ClInclude Include="Core\RHI\VertexLayout.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

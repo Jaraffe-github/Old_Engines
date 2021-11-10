@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Foundation">
+      <UniqueIdentifier>{9c015c17-0fe2-488f-b642-d39cf863a395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{5e1d6992-b0f4-4eff-b96e-22de9c6f568a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\GraphicsDevice">
+      <UniqueIdentifier>{f304d992-318f-4f22-ad57-4dcc2b7abfeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\GraphicsDevice\Vulkan">
+      <UniqueIdentifier>{9cb62fa7-2e01-4698-8a67-6c5d9917c746}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JFFramework.h" />
+    <ClInclude Include="JFFoundation.h" />
+    <ClInclude Include="Foundation\JFArray.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\JFAllocator.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\JFIterator.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\JFApplication.h" />
+    <ClInclude Include="JFInclude.h" />
+    <ClInclude Include="Framework\GraphicsDevices\JFGraphicsDevice.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\JFMath.h" />
+    <ClInclude Include="Foundation\JFLog.h" />
+    <ClInclude Include="Framework\Platform\JFWindow.h" />
+    <ClInclude Include="Framework\JFVector2.h" />
+    <ClInclude Include="JFEngine.h" />
+    <ClInclude Include="Foundation\JFSort.h" />
+    <ClInclude Include="Foundation\JFObject.h" />
+    <ClInclude Include="Foundation\JFStringW.h" />
+    <ClInclude Include="Framework\JFVector3.h" />
+    <ClInclude Include="Framework\JFVector4.h" />
+    <ClInclude Include="Framework\JFMatrix2.h" />
+    <ClInclude Include="Framework\JFMatrix3.h" />
+    <ClInclude Include="Framework\JFMatrix4.h" />
+    <ClInclude Include="Foundation\JFString.h" />
+    <ClInclude Include="Foundation\JFRefCounter.h" />
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKCommandBuffer.h">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKDebug.h">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKDevice.h">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKImage.h" />
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKInclude.h">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKLayerChecker.h">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKMemory.h" />
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKSwapChain.h" />
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKTools.h">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\JFSize.h" />
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKImageView.h" />
+    <ClInclude Include="Foundation\JFThread.h" />
+    <ClInclude Include="Foundation\JFSpinLock.h" />
+    <ClInclude Include="Foundation\JFScopeLock.h" />
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKVertexBufer.h" />
+    <ClInclude Include="Framework\GraphicsDevices\Vulkan\JFVKResource.h" />
+    <ClInclude Include="Foundation\JFCondition.h" />
+    <ClInclude Include="Foundation\JFTuple.h" />
+    <ClInclude Include="Foundation\JFTypeTraits.h" />
+    <ClInclude Include="Foundation\JFFunction.h" />
+    <ClInclude Include="Foundation\JFTypes.h" />
+    <ClInclude Include="Foundation\JFTypeTuple.h" />
+    <ClInclude Include="JFBetaFunctions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Foundation\JFAllocator.cpp">
+      <Filter>Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\JFApplication.cpp" />
+    <ClCompile Include="Framework\GraphicsDevices\JFGraphicsDevice.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\JFLog.cpp" />
+    <ClCompile Include="Framework\JFVector2.cpp" />
+    <ClCompile Include="Framework\Platform\Win32\JFWin32.cpp" />
+    <ClCompile Include="Foundation\JFStringW.cpp" />
+    <ClCompile Include="Framework\JFVector3.cpp" />
+    <ClCompile Include="Framework\JFVector4.cpp" />
+    <ClCompile Include="Framework\JFMatrix2.cpp" />
+    <ClCompile Include="Framework\JFMatrix3.cpp" />
+    <ClCompile Include="Framework\JFMatrix4.cpp" />
+    <ClCompile Include="Foundation\JFString.cpp" />
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKCommandBuffer.cpp">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKDebug.cpp">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKDevice.cpp">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKImage.cpp" />
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKLayerChecker.cpp">
+      <Filter>Framework\GraphicsDevice\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKSwapChain.cpp" />
+    <ClCompile Include="Framework\JFSize.cpp" />
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKImageView.cpp" />
+    <ClCompile Include="Foundation\JFThread.cpp" />
+    <ClCompile Include="Foundation\JFSpinLock.cpp" />
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKResource.cpp" />
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKVertexBufer.cpp" />
+    <ClCompile Include="Foundation\JFCondition.cpp" />
+    <ClCompile Include="Framework\GraphicsDevices\Vulkan\JFVKMemory.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Source\D3D11\Vertex.cpp" />
+    <ClCompile Include="Source\D3D11\Effect.cpp" />
+    <ClCompile Include="Source\Utils\D3DUtil.cpp" />
+    <ClCompile Include="Source\D3D11\LightHelper.cpp" />
+    <ClCompile Include="Source\D3D11\RenderStates.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\Transform.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\Camera.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\Renderer.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\MeshRenderer.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\Interface\BaseComponent.cpp" />
+    <ClCompile Include="Source\Core\Object\GameObject\GameObject.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\Mesh.cpp" />
+    <ClCompile Include="Source\Utils\MathHelper.cpp" />
+    <ClCompile Include="Source\D3D11\TextureMgr.cpp" />
+    <ClCompile Include="Source\Core\Object\Object.cpp" />
+    <ClCompile Include="Source\Core\Object\Material.cpp" />
+    <ClCompile Include="Source\Core\Object\Texture.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\ColisionBox.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\Colision.cpp" />
+    <ClCompile Include="Source\Utils\GeometryGenerator.cpp" />
+    <ClCompile Include="Source\Utils\MeshLoader.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\SkyBox.cpp" />
+    <ClCompile Include="App\JFWindowsApp.cpp" />
+    <ClCompile Include="Source\Core\Platform\PlatformWindow\OS\JFPlatformWindows.cpp" />
+    <ClCompile Include="Source\Core\Common\Timer\GameTimer.cpp" />
+    <ClCompile Include="Source\Core\Device\DirectX11\JFDeviceDirectX11.cpp" />
+    <ClCompile Include="Source\Core\PhysX\PhysXDevice.cpp" />
+    <ClCompile Include="Source\Core\Scene\Scene.cpp" />
+    <ClCompile Include="Source\Core\Manager\Input\Input.cpp" />
+    <ClCompile Include="FrameworkMain.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\JFDirectionalLight.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\JFPointLight.cpp" />
+    <ClCompile Include="Source\Core\Object\Component\JFSpotLight.cpp" />
+    <ClCompile Include="Source\Core\RenderMap\JFSSAO.cpp" />
+    <ClCompile Include="Source\Core\RenderMap\JFGBuffer.cpp" />
+    <ClCompile Include="Source\Utils\JFMeshLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Source\D3D11\Vertex.h" />
+    <ClInclude Include="Source\D3D11\Effect.h" />
+    <ClInclude Include="Source\Utils\D3DUtil.h" />
+    <ClInclude Include="Source\D3D11\LightHelper.h" />
+    <ClInclude Include="Source\D3D11\RenderStates.h" />
+    <ClInclude Include="Source\Core\Object\Component\Transform.h" />
+    <ClInclude Include="Source\Core\Object\Component\Camera.h" />
+    <ClInclude Include="Source\Core\Object\Component\Renderer.h" />
+    <ClInclude Include="Source\Core\Object\Component\MeshRenderer.h" />
+    <ClInclude Include="Source\Core\Object\Component\Interface\BaseComponent.h" />
+    <ClInclude Include="Source\Core\Object\Component\Interface\CommonComponent.h" />
+    <ClInclude Include="Source\Core\Object\GameObject\GameObject.h" />
+    <ClInclude Include="Source\Core\Object\Component\Mesh.h" />
+    <ClInclude Include="Source\Utils\MathHelper.h" />
+    <ClInclude Include="Source\D3D11\TextureMgr.h" />
+    <ClInclude Include="Source\Core\Object\Object.h" />
+    <ClInclude Include="Source\Core\Object\Material.h" />
+    <ClInclude Include="Source\Core\Object\Texture.h" />
+    <ClInclude Include="Source\Core\Object\Component\ColisionBox.h" />
+    <ClInclude Include="Source\Core\Object\Component\Colision.h" />
+    <ClInclude Include="Source\Utils\GeometryGenerator.h" />
+    <ClInclude Include="Source\Utils\MeshLoader.h" />
+    <ClInclude Include="Source\Core\Object\Component\SkyBox.h" />
+    <ClInclude Include="Source\Core\Common\Exception\JFException.h" />
+    <ClInclude Include="App\JFWindowsApp.h" />
+    <ClInclude Include="Source\Core\Platform\PlatformWindow\OS\JFPlatformWindows.h" />
+    <ClInclude Include="Source\Core\Common\GenericPlatformType.h" />
+    <ClInclude Include="Source\Core\Common\GlobalValues.h" />
+    <ClInclude Include="Source\Core\Common\Timer\GameTimer.h" />
+    <ClInclude Include="Source\Core\Device\DirectX11\InterfacePointers.h" />
+    <ClInclude Include="Source\Core\Device\DirectX11\JFDeviceDirectX11.h" />
+    <ClInclude Include="Source\Core\Common\Utile\JFUtile.h" />
+    <ClInclude Include="Source\Core\PhysX\PhysXDevice.h" />
+    <ClInclude Include="Source\Core\Scene\Scene.h" />
+    <ClInclude Include="Source\Core\Manager\Input\Input.h" />
+    <ClInclude Include="App\JFApp.h" />
+    <ClInclude Include="Source\Core\Common\ForwardDeclaration.h" />
+    <ClInclude Include="Source\Core\Object\Component\JFDirectionalLight.h" />
+    <ClInclude Include="Source\Core\Object\Component\JFPointLight.h" />
+    <ClInclude Include="Source\Core\Object\Component\JFSpotLight.h" />
+    <ClInclude Include="Source\Core\RenderMap\JFSSAO.h" />
+    <ClInclude Include="Source\Core\RenderMap\JFGBuffer.h" />
+    <ClInclude Include="Source\Utils\JFMeshLoader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Source\Shader\LightPrePass\LightPrePassLightBuffer.fx" />
+    <CustomBuild Include="Source\Shader\Shadow\ShadowBuffer.fx" />
+    <CustomBuild Include="Source\Shader\ForwardRender\Basic.fx" />
+    <CustomBuild Include="Source\Shader\ForwardRender\CubeMap.fx" />
+    <CustomBuild Include="Source\Shader\ForwardRender\Color.fx" />
+    <CustomBuild Include="Source\Shader\ForwardRender\NormalMap.fx" />
+    <CustomBuild Include="Source\Shader\GBuffer\GBuffer.fx" />
+    <CustomBuild Include="Source\Shader\SSAO\SSAOBuffer.fx" />
+    <CustomBuild Include="Source\Shader\SSAO\SSAOBlur.fx" />
+    <CustomBuild Include="Source\Shader\DebugRender\DebugTexture.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Source\Shader\LightHelper.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\flare.dds" />
+    <Image Include="Resources\flarealpha.dds" />
+    <Image Include="Resources\mipmaps.dds" />
+  </ItemGroup>
+</Project>

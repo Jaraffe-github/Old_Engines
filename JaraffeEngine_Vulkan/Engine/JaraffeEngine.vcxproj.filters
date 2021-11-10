@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{acbeb89e-b50d-4980-ba5d-482271f5f8be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Core\CoreGlobal.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanCommandBuffer.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanCommandPool.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanDevice.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanExtensionsInfo.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanFrameBuffer.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanInstance.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanPhysicalDevice.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanPipeline.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanSemaphore.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanShaderModule.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanSurface.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanSwapchain.cpp" />
+    <ClCompile Include="Core\HAL\File\GenericFile.cpp" />
+    <ClCompile Include="Core\HAL\AppWindow\OS\GLFWWindow.cpp" />
+    <ClCompile Include="Core\HAL\AppWindow\GenericWindow.cpp" />
+    <ClCompile Include="Core\HAL\Memory\Allocator\System\SystemAllocator.cpp" />
+    <ClCompile Include="Core\HAL\Memory\Allocator\TBB\TBBAllocator.cpp" />
+    <ClCompile Include="Core\HAL\Memory\Memory.cpp" />
+    <ClCompile Include="Core\RHI\DynamicRHI.cpp" />
+    <ClCompile Include="Core\RHI\Vulkan\VulkanDynamicRHI.cpp" />
+    <ClCompile Include="Core\RHI\VertexLayout.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Color.frag" />
+    <None Include="Shaders\Color.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Core\CoreGlobal.h" />
+    <ClInclude Include="Common\GlobalMacro.h" />
+    <ClInclude Include="Config\EngineConfig.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanCommandBuffer.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanCommandPool.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanDevice.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanExtensionsInfo.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanFrameBuffer.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanInstance.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanPhysicalDevice.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanPipeline.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanSemaphore.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanShaderModule.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanSurface.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanSwapchain.h" />
+    <ClInclude Include="Core\HAL\File\GenericFile.h" />
+    <ClInclude Include="Core\HAL\AppWindow\OS\GLFWWindow.h" />
+    <ClInclude Include="Core\HAL\AppWindow\GenericWindow.h" />
+    <ClInclude Include="Core\HAL\Memory\Allocator\System\SystemAllocator.h" />
+    <ClInclude Include="Core\HAL\Memory\Allocator\TBB\TBBAllocator.h" />
+    <ClInclude Include="Core\HAL\Memory\Memory.h" />
+    <ClInclude Include="Core\RHI\DynamicRHI.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanDynamicRHI.h" />
+    <ClInclude Include="Core\RHI\RHIDefinitions.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanConfiguration.h" />
+    <ClInclude Include="Core\RHI\Vulkan\VulkanConverter.h" />
+    <ClInclude Include="Core\RHI\VertexLayout.h" />
+  </ItemGroup>
+</Project>

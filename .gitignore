@@ -20,13 +20,15 @@
 *.mod
 *.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
 # Executables
 *.exe
 *.out
 *.app
+
+# Visual Studio 2015 and later
+*.VC.db
+*.VC.opendb
+**/.vs/
+
+# project settings
+Build/
